@@ -1,0 +1,61 @@
+/* ESTILOS DEL MAIN */
+
+@use '../mixins/responsive.scss' as *;
+
+.article{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 1px 1px 15px rgb(173, 172, 172);
+    display: grid;
+    grid-template-rows: 60% 40%;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 70px;
+    @include responsive (desktop){
+        margin-bottom: 100px;
+        grid-template-columns: 60% 50%;
+        grid-template-rows: 350px;
+        justify-content: space-between;
+
+    }
+
+    &__image{
+        padding: 60px;
+        grid-row: 1/2;
+        @include responsive (desktop){
+            height: 350px;
+            grid-column: 2/3;
+            grid-row: 1/2;  
+        }
+        &--reverse{
+            grid-column: 1/2;
+        }
+    }
+    &__description{
+        padding-right: 30px;
+        padding-left: 30px;
+        grid-row: 2/3;
+        @include responsive (desktop){
+            grid-column: 1/2;
+            grid-row-start: 1;
+            text-align: left;
+            margin-top: 100px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        &--reverse{
+            @include responsive (desktop){
+                grid-column: 2/3;
+                margin-left: -170px;
+                padding-right: 200px;
+            }
+        }
+    }
+    &__text{
+        
+        padding-bottom: 30px;
+        line-height: 25px;
+        color: var(--grayish-blue);
+    }
+}

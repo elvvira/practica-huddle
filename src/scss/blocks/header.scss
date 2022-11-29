@@ -1,0 +1,90 @@
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
+
+.header{
+    background-image: url(..//assets/images/bg-hero-mobile.svg);
+    background-color: var(--very-pale-cyan);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 70px;
+    
+    @include responsive (desktop){
+        background-image: url(..//assets/images/bg-hero-desktop.svg);
+        padding: 40px;
+        text-align: left;
+        height: 800px;
+    }
+    &__button--try{
+        padding-top: 15px;
+        font-size: 0.8rem;
+        color: black;
+        background-color: white;
+        width: 130px;
+        height: 45px;
+        box-shadow: 5px 5px 5px rgb(202, 202, 202);
+        margin-right: 0;
+        @include responsive (desktop){
+            position: relative;
+            right: -450px;
+        }
+    }
+    &__button--try:hover{
+        color: var(--grayish-blue);
+        background-color: white;
+    }
+    &__top{
+        padding: 30px;
+        display: flex;
+        text-align:center;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    &__logo{
+        object-fit: contain;
+        width: 140px
+    }
+    &__description{
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 100px;
+        position: relative;
+        @include responsive (desktop){
+           left: -100px;
+           top: 20px;
+        }
+    }
+    &__title{
+        line-height: 45px;
+        @include responsive (desktop){
+            font-size: 2.8rem;
+            width: 50%;
+            line-height: 60px;
+        }
+    }
+    &__text{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 50px;
+        @include responsive (desktop){
+            width: 50%;
+            font-size: 1.2rem;
+        }
+    }
+    &__image{
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        top: -40px;
+        @include responsive (desktop){
+            position: absolute;
+            width: 50%;
+            top: 240px;
+            right: 40px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@use '../mixins/responsive.scss' as *;
+
+.box{
+    width: 90%;
+    height: 230px;
+    background-color: white;
+    box-shadow: 1px 1px 15px rgba(1, 39, 52, 0.37);
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 1.5rem;
+    text-align: center;
+    padding: 1.5rem;
+    padding-top: 2.3rem;
+    position: relative;
+    top: 80px;
+    z-index: 100;
+
+    @include responsive (desktop){
+        width: 40%;
+    }
+    &__title{
+        margin-bottom: 30px;
+    }
+}
+.button{
+    @include responsive (desktop){
+        margin-right: auto;margin-left: auto;
+    } 
+}

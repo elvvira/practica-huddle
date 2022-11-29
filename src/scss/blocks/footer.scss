@@ -1,0 +1,93 @@
+/* ESTILOS DEL FOOTER */
+@use '../mixins/responsive.scss' as *;
+
+.footer{
+    padding-top: 8rem;
+    background-color: var(--very-dark-cyan);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    position: relative;
+    @include responsive (desktop){
+        display: flex;
+        padding-left: 50px;
+        padding-right: 50px;
+        gap: 10px;
+        justify-content: center;
+    }
+    &__section{
+        margin-bottom: 50px;
+        @include responsive (desktop){
+            width: 3000px;
+        }
+
+    }
+    &__logo{
+        margin-bottom: 50px;
+    }
+    &__information{
+        width: 90%;
+        display: flex;
+        gap: 20px;
+        justify-content:baseline;
+    }
+    &__icon{
+        text-align: left;
+        object-fit: contain;
+        padding-top: 18px;
+        height: 35px;
+    }
+    &__list{
+        line-height: 35px;
+        margin-bottom: 50px;
+        @include responsive (desktop){
+            width: 700px;
+            display: flex;
+            gap: 120px;
+            justify-content: center;
+            margin-top: 100px;
+        }
+    }
+
+    &__rrss{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 30px;
+        @include responsive (desktop){
+            margin-top: 100px;
+            width: 700px;
+            padding-right: 200px;
+        }
+        &--circle{
+            width: 40px;
+            height: 40px;
+            border-radius: 3rem;
+            border: 1px solid white;
+            text-align: center;
+        }
+        &--icon{
+            padding-top: 10px;
+        }
+        &--icon:hover,
+        &--circle:hover{
+            color: var(--pink);
+            border-color: var(--pink);
+        }
+    }
+    &__copy{
+        text-align: center;
+        font-size: 0.8rem;
+        @include responsive (desktop){
+            position: absolute;
+            display: block;
+            width: 400px;
+            top: 490px;
+            right: -8px;
+            text-align: left;
+        }
+    }
+}
+
