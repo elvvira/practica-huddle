@@ -1,11 +1,11 @@
 # Huddle
 
-![Imagen del proyecto](https://github.com/elvvira/practica-Blogr/blob/main/assets/blogr%20page-desktop.jpeg?raw=true)
+![Imagen del proyecto](https://github.com/elvvira/practica-huddle/blob/main/docs/assets/desktop.jpeg?raw=true)
 
 ## Ejemplo en vivo
 
 - [github-repositorie](https://github.com/elvvira/practica-Blogr)
-- [URL-de-la-api](https://elvvira.github.io/practica-Blogr/)
+- [URL-de-la-api](https://elvvira.github.io/practica-huddle/)
 
 ## Descripción 
 
@@ -27,7 +27,7 @@ En esta práctica mejoré la fluidez con el responsive, aprendiendo a trabajar p
 
 Si quieres echar un vistazo al proyecto:
 
-![Captura del proyecto](https://github.com/elvvira/practica-Blogr/blob/main/assets/blogr%20page%20mobile.jpeg?raw=true)
+![Captura del proyecto](https://github.com/elvvira/practica-huddle/blob/main/docs/assets/mobile.jpeg?raw=true)
 
 
 ## Autor 
