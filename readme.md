@@ -13,7 +13,7 @@ Huddle es una paltaforma en la que tu audiencia se puede comunicar y mejorar la 
 
 ## ¿Qué he aprendido en este proyecto? 
 
-En esta práctica mejoré la fluidez con el responsive, aprendiendo a trabajar  
+En esta práctica mejoré la fluidez con el responsive, aprendiendo a trabajar pensando en los dos tamaños correspondientes. También mejoré mis habilidades usando la herramienta flex. 
 
 ## Tecnologías 
 
